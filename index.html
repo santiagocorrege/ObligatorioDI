@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mac Miller Tribute Page, includes merch and the lastest news">
+  <meta name="keywords" content="Mac, Miller, Merch, Tribute, Page">
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mooli" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="/img/logo1.png">
+  <title>Mac Miller Tribute Page</title>
+</head>
+<body>
+  <header>
+    <figure><img src="./img/logo.png" alt="page-logo"></figure>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#noticias">Noticias</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio">
+      <article>
+        <h2>Suscribete a nuestro feed!</h2>
+        <p>Unete a nuestro feed para estar al tanto de las ultimas actualizaciones!</p>
+        <form action="/endpoint-sus-feed.php" method="post">
+          <fieldset>
+            <input type="text" id="nombre" name="nombre" value="" class="input" placeholder="Ingresa tu email" required><br>
+            <input type="submit" value="Suscribete" class="btn-submit">
+          </fieldset>
+        </form> 
+      </article>
+    </section>
+    <section id="productos">
+      <h2 id="productos-titulo">Productos Destacados</h2>
+      <p id="productos-descripcion">Descubre nuestra ultima coleccion edicion limitada!</p>
+        <article id="productos-art1">
+          <figure><img src="./img/Merch/merch-front1.jpg" alt="merch canguro blanco"></figure>
+          <h3>Swimming Gradient Heavyweight Hoodie </h3>
+          <h3>$800</h3>
+          <p>Swimming 5-year anniversary design printed on the front and back of an oatmeal colored unisex hoodie with embroidery overlay. </p>
+        </article>
+        <article id="productos-art2">
+          <figure><img src="./img/Merch/merch-front2.jpg" alt="merch canguro verde"></figure>
+          <h3>Small Worlds Heavyweight Crewneck</h3>
+          <h3>$1200</h3>
+          <p>"Small Worlds" designs printed with puff print detail on the front and back of a custom-dyed heavyweight green unisex crewneck sweatshirt.</p>
+        </article>
+        <article id="productos-art3">
+          <figure><img src="./img/Merch/merch-front3.jpg" alt="merch buzo negro"></figure>
+          <h3>WMWTSO Track List Long Sleeve </h3>
+          <h3>$550</h3>
+          <p>WMWTSO designs printed on the front and back of a black unisex pocket long sleeve.</p>
+        </article>
+        <a href="vermas.html" id="productos-a">Ver mas</a>
+    </section>
+    <section id="noticias">
+      <h2 id="titulo">Noticias</h2>
+      <p id="p">Enterate de lo ultimo!</p>
+          <article id="noticia-1">
+            <figure>
+              <img src="./img/Noticias/noticia1.jpg" alt="noticia traficante sentenciado">
+            </figure>
+            <h3>Mac Miller: Second drug supplier sentenced to 17 years in prison for giving rapper fentanyl-laced pills</h3>
+            <p>"He would never knowingly take a pill with fentanyl, ever. He wanted to live and was excited about the future," Miller's mother wrote in a emotional statement </p>
+            <span>Actualidad</span><span>Noticia</span><span>Trafico</span>
+          </article>
+          <article id="noticia-2" class="noticia-h">
+            <figure>
+              <img src="./img/Noticias/noticia2.jpg" alt="noticia tributos">
+            </figure>
+            <div>
+              <h3>Stars remember Mac Miller on second anniversary of his death</h3>
+              <p>Mac Miller: SZA, Chance the Rapper and Kehlani lead tributes on anniversary of rapper's death</p>
+              <span>Aniversario</span><span>Tributo</span><span>SZA</span><span>Chance the Rapper</span>
+            </div>
+          </article>
+          <article id="noticia-3" class="noticia-h">
+            <figure>
+              <img src="./img/Noticias/noticia3.jpg" alt="noticia review circles">
+            </figure>
+            <div>
+              <h3>Mac Miller's album 'Circles' shows an artist at his creative peak</h3>
+              <p>Mac Miller review, Circles: Posthumous album reflects an artist at his creative peak</p>
+              <span>Review</span><span>Album</span><span>Circles</span><span>Artist Peak</span>
+            </div>
+          </article>
+    </section>
+    <section id="galeria">
+      <h2 id="titulo-gal">Galeria</h2>
+      <p id="descripcion-gal">Fotos de las ultimas obras de nuestra exposicion artistica</p>
+      <figure id="gal-1"><img src="./img/Galeria/1.png" alt="imagen galeria 1 vertical larga"></figure>
+      <figure id="gal-2"><img src="./img/Galeria/2.png" alt="imagen galeria 2"></figure>
+      <figure id="gal-3"><img src="./img/Galeria/3.png" alt="imagen galeria 3"></figure>
+      <figure id="gal-4"><img src="./img/Galeria/4.png" alt="imagen galeria 4"></figure>
+      <figure id="gal-5"><img src="./img/Galeria/5.png" alt="imagen galeria 5"></figure>
+      <figure id="gal-6"><img src="./img/Galeria/6.png" alt="imagen galeria 6"></figure>
+      <figure id="gal-7"><img src="./img/Galeria/7.png" alt="imagen galeria 7"></figure>
+      <figure id="gal-8"><img src="./img/Galeria/8.png" alt="imagen galeria 8 horizontal ancha"></figure>
+    </section>
+    <section id="contacto">
+      <h2 id="contacto-titulo">Contacto</h2>
+      <p id="contacto-descripcion">Envianos tus dudas o suguerencias!</p>
+      <form action="/endpoint-comentarios.php" method="post">
+        <fieldset>
+          <label for="c-nombre" id="c-nombre-etiqueta">Nombre:</label> 
+          <input type="text" name="c-nombre" id="c-nombre" placeholder="Nombre..." required>
+          <label for="c-apellido" id="c-apellido-etiqueta">Apellido:</label> 
+          <input type="text" name="c-apellido" id="c-apellido" placeholder="Apellido..." required>
+          <label for="c-celular" id="c-celular-etiqueta">Celular:</label> 
+          <input type="text" name="c-celular" id="c-celular" placeholder="Celular..." required>
+          <label for="c-pais" id="c-pais-etiqueta">Pais:</label> 
+          <select name="c-pais" id="c-pais" required>
+            <option value="" selected disabled hidden>Seleccionar Pais</option>
+            <option value="uruguay">Uruguay</option>
+            <option value="argentina">Argentina</option>
+            <option value="brasil">Brasil</option>
+            <option value="mexico">Mexico</option>
+            <option value="colombia">Colombia</option>
+          </select>
+          <label for="c-comentarios" id="c-comentarios-etiqueta">Comentarios</label>
+          <textarea name="c-comentario" id="c-comentarios" cols="30" rows="1" placeholder="Escribe tu comentario..." required></textarea>
+          <input type="submit" value="Suscribete" class="btn-submit" id="btn-contacto">
+        </fieldset>
+      </form>
+      <table id="contacto-tabla">
+      <caption>Tributos</caption>
+      <thead>
+        <tr>
+          <th>Nombre Evento</th>
+          <th>Fechas</th>
+          <th>Precio</th>
+          <th>VIP</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Espacio Green</td>
+          <td>10/10/2023</td>
+          <td>$150</td>
+          <td>$500</td>
+        </tr>
+        <tr>
+          <td>Outgoing Fest</td>
+          <td>17/10/2023</td>
+          <td rowspan="2" colspan="2">$350</td>
+        </tr>
+        <tr>
+          <td>Bridge Party</td>
+          <td>11/20/2023</td>
+        </tr>
+      </table> 
+    </section>
+  </main>
+  <footer>
+    <p>2023 Club de Fans - Creado por Santiago Correge</p>
+    <nav>
+      <ul>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
